@@ -58,21 +58,21 @@ while (True):
         a = int(a)
         b = int(b)
     except ValueError:
-        print "Invalid number argument..."
+        print ("Invalid number argument...")
         op = None
 
     # decide function
     if (op != None):
         if (op == "+"):
-            print "Sum: ", add(a, b)
+            print ("Sum: "), add(a, b)
         elif (op == "-"):
-            print "Difference: ", sub(a, b)
+            print ("Difference: "), sub(a, b)
         elif (op == "*"):
-            print "Product: ", mult(a, b)
+            print ("Product: "), mult(a, b)
         elif (op == "/"):
-            print "Quotient: ", div(a, b)
+            print ("Quotient: "), div(a, b)
         else:
-            print "Invalid operation..."
+            print ("Invalid operation...")
 
     q = raw_input("Quit? [y/n] ")
     if (q == "y" or q == "Y"):
